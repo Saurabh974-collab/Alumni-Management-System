@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni Search</title>
+    <link rel="stylesheet" href="./search_alumni.css">
+    <style>/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light background for the page */
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: violet;
+    border-bottom: 1px solid violet;
+}
+
+
+.logo {
+    width: 60px; /* Adjust logo size as necessary */
+    /* height: auto; */
+    display: block; /* Ensures it behaves like a block element */
+    margin: 5px /* Centers the logo */
+    
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style-type: none;
+    padding: 0px;
+    font-size: 20px;
+    
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px; /* Space between links */
+   
+}
+
+nav ul li a {
+    color: black; /* Link color */
+    text-decoration: none; /* No underline */
+    text-align: center;
+}
+
+nav ul li a:hover {
+    color:blueviolet; /* Change color on hover */
+}
+    .table-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px; /* Add spacing from the top */
+    }
+    
+    table {
+        border-collapse: collapse;
+        width: 80%; /* Adjust table width */
+        margin: auto; /* Center the table */
+        background-color: white;
+    }
+    
+    th, td {
+        padding: 10px; /* Add padding for cells */
+        border: 1px solid #000;
+        text-align: left;
+    }
+    
+    th {
+        background-color: #54C392; /* Header background */
+    }
+    
+    #btn {
+        background-color: #73EC8B;
+    }
+    
+    #h {
+        text-align: center;
+    }
+    
+    h1 {
+        text-align: center;
+        margin-top: 30px;
+    }
+    .search-container {
+        display: flex;           /* Use flexbox for layout */
+        align-items: center;     /* Center items vertically */
+        justify-content: center; /* Center items horizontally */
+        gap: 10px;               /* Space between input and button */
+        margin-bottom: 20px;     /* Optional: space below the search bar */
+    }
+    
+    input[type="text"] {
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        width: 300px;            /* Set width for the input */
+    }
+    
+    button {
+        padding: 10px 15px;
+        font-size: 16px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        background-color: #0056b3;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://www.mgmmcha.org/images/logos/mgmlogo.png" alt="College Logo" class="logo">
+        
+        <nav>
+            <ul class="list">
+                <li><a href="/"><b>Home</b></a></li>
+                <li><a href="http://localhost/search_alumni.php"><b>Search Alumni</b></a></li>
+                <li><a href="./notable_alumni.html"><b>Notable Alumni</b></a></li>
+                <li><a href="gallery.html#gallery"><b>Gallery</b></a></li>
+                <li><a href="./news.html#news"><b>News</b></a></li>
+                <li><a href="./index.html#contact"><b>Contact Us</b></a></li>
+    
+                  
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h1>Alumni</h1>
+        <div class="search-container">
+            <h2>Search Alumni By Name, Surname, or Graduation Year</h2>
+            <form action="http://localhost/search_alumni.php" method="POST" class="search-box">
+                
+                <input type="text" name="name" placeholder="Enter first or last name">
+                <input type="number" name="graduation_year" placeholder="Enter graduation year">
+                <button type="submit">Search &#128269;</button>
+            </form>
+        </div>
+        <div id="search-results">
+            <!-- Search results will be displayed here -->
+        </div>
+    </main>
+    
+    <footer>
+        <p>© 2024 College Alumni Tracking System</p>
+    </footer>
+</body>
+</html>

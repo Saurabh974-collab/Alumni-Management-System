@@ -1,0 +1,110 @@
+/* style.css */
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light background for the page */
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: violet;
+    border-bottom: 1px solid violet;
+}
+
+
+.logo {
+    width: 60px; /* Adjust logo size as necessary */
+    /* height: auto; */
+    display: block; /* Ensures it behaves like a block element */
+    margin: 5px /* Centers the logo */
+    
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style-type: none;
+    padding: 0px;
+    font-size: 20px;
+    
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px; /* Space between links */
+   
+}
+
+nav ul li a {
+    color: black; /* Link color */
+    text-decoration: none; /* No underline */
+    text-align: center;
+}
+
+nav ul li a:hover {
+    color:blueviolet; /* Change color on hover */
+}
+main {
+    flex: 1;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.search-container h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    padding: 10px 20px;
+    width: 50%;
+    margin: 0 auto;
+    background-color: #f7f7f7;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 30px;
+}
+
+.search-box button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #888;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    background-color: #f8f8f8;
+    color: #666;
+}

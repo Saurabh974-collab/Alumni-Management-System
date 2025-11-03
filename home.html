@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni Managemnt System</title>
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Header */
+        header {
+            background-color: #da4ae2;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            
+        }
+
+        header img {
+            max-width: 100px;
+            position: absolute;
+            left: 20px;
+            top: 15px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin: 5px 0 15px;
+        }
+
+        /* Hero Section with Video */
+        .hero {
+            position: relative;
+            height: 70vh;
+            overflow: hidden;
+            display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+    color: black;
+    text-align: center;
+    background: url('https://img.freepik.com/free-vector/abstract-purple-wavy-modern-light-background_361591-1419.jpg') no-repeat center center/cover; /* Background image */
+}
+
+        
+
+        .hero-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color:black;
+        }
+
+        .hero-content h2 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .hero-content p {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+        .hero img {
+            width: 20%; 
+            border-radius: 30px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+
+        .cta-button {
+            background-color: #1dd1a1;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #10ac84;
+            transform: scale(1.1);
+        }
+
+        /* About Section */
+        .about {
+            padding: 50px 20px;
+            background: linear-gradient(to right, #f4f4f4, #eaeaea);
+            text-align: center;
+        }
+
+        .about h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #ca2fd8;
+        }
+
+        .about p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 30px;
+            line-height: 1.8;
+        }
+
+        .about img {
+            max-width: 100%;
+            border-radius: 10px ;
+            border-color: #333;
+            border-width: 20px;
+        }
+
+        /* Companies Section */
+        .companies {
+            background-color: #fff;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .companies h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #ca2fd8;
+        }
+
+        .company-logos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .company-logos img {
+            max-width: 150px;
+            transition: transform 0.3s ease;
+        }
+
+        .company-logos img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #ca2fd8;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        /* hover to the image*/
+        
+.about img {
+    width: 50%; 
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect for Image */
+.about img:hover {
+    transform: scale(1.05); 
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); 
+}/* dropdown list csa*/
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Header */
+        header {
+            background-color: #da4ae2;
+            color: white;
+            padding: 5px;
+            position: relative;
+        }
+
+        header img {
+            max-width: 100px;
+            position: absolute;
+            left: 20px;
+            top: 6px;
+
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            text-align: center;
+           
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #da4ae2;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 1px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 40px;
+        }
+
+        nav ul li {
+            position: relative;
+        }
+
+        nav ul li a {
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 5px 10px;
+            display: block;
+        }
+
+        nav ul li a:hover {
+            background-color: #fc25f8;
+            border-radius: 5px;
+        }
+
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            list-style: none;
+            padding: 10px 0;
+            top: 100%; /* Position below parent menu */
+            left: 0;
+            z-index: 10;
+        }
+
+        .dropdown-menu li a {
+            color: #333;
+            padding: 10px 16px;
+            white-space: nowrap;
+        }
+
+        .dropdown-menu li a:hover {
+            background-color: #f0f0f0;
+            color: #da4ae2;
+        }
+
+        nav ul li:hover .dropdown-menu {
+            display: block;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <img src="https://www.mgmmcha.org/images/logos/mgmlogo.png" alt="College Logo">
+        <h1>MGM's College of Engineering, Nanded</h1>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li class="dropdown">
+                <a href="#">Login</a>
+                <ul class="dropdown-menu">
+                    <li><a href="http://localhost/login.php">Alumni Login</a></li>
+                    <li><a href="http://localhost/tpo_login.php">Teacher Login</a></li>
+                    <li><a href="http://localhost/admin_login.php">Admin Login</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Register</a>
+                <ul class="dropdown-menu">
+                    <li><a href="http://localhost/register.html">Alumni Register</a></li>
+                    <li><a href="http://localhost/tpo_register.php">Teacher Register</a></li>
+                </ul>
+            </li><li><a href="./contact.html"><b>Contact Us</b></a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="./downloadimg.png" alt="img">
+        <div class="hero-content">
+            <h2> <i>!! Alumni Managemnt System🎓!! </h2>
+            <p>"A platform connecting alumni, teachers. Stay updated with news, events, and celebrate the achievements of our alumni and faculty!"</i></p>
+            <!-- <a href="#about" class="cta-button">Login</a> -->
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2>About Us</h2>
+        <p> <STRONG>OUR VISION:</STRONG> To be one of the leading Departments for Computer Science & Engineering 
+            education, developing proficient Engineers with global acceptance in the service 
+            of mankind.</p><BR>
+        <p> <STRONG>OUR MISION:</STRONG> 1. Providing technical skills with strong fundamentals of Computer Science 
+            discipline with an emphasis on software development.
+            <br>
+            2. Inculcating analytical, programming and multidisciplinary skills to enhance 
+            employability.
+            <br> 
+            3. Fostering problem-solving, team-building, and lifelong learning skills with 
+            societal, environmental and ethical sense.
+            <br>
+            4. Developing researchers and entrepreneurs to solve real-life problems 
+            through industry interactions and collaborations.
+            </p>
+        <img src="https://mgmcen.ac.in/images/slide4.jpg" alt="College Campus">
+    </section>
+
+    <!-- Companies Section -->
+    <section class="companies">
+        <h2>Companies That Visited Us</h2>
+        <div class="company-logos">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Tata_Consultancy_Services_Logo.svg/1200px-Tata_Consultancy_Services_Logo.svg.png" alt="TCS">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Infosys_logo.svg/1280px-Infosys_logo.svg.png" alt="Infosys">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Wipro_Primary_Logo_Color_RGB.svg/1280px-Wipro_Primary_Logo_Color_RGB.svg.png" alt="Wipro">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Accenture.svg/2560px-Accenture.svg.png" alt="Accenture">
+            <img src="https://1000logos.net/wp-content/uploads/2023/03/HCL-logo.png" alt="KPIT">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/KPIT_Technologies_logo.png/1200px-KPIT_Technologies_logo.png" alt="HCL">
+            <img src="https://securityboat.net/wp-content/uploads/2023/09/SecurityBoat-Linkedin-CompanyPage.png" alt="security boat">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/IBM_logo.svg/2560px-IBM_logo.svg.png" alt="ibm">
+            
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 MGM's College of Engineering, Nanded. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
