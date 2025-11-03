@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Contact Us</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4; /* Light background for the page */
+            color: #333;
+        }
+        
+      
+        
+        .contact-section {
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        h2#contact-title {
+            text-align: center;
+            font-size: 35px;
+            color: violet;
+            margin: 20px 0;
+        }
+        
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .contact-label {
+            margin-top: 10px;
+            color: #333;
+            font-weight: bold;
+        }
+        
+        .contact-input,
+        .contact-textarea {
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #aaa;
+            border-radius: 3px;
+            font-size: 14px;
+        }
+        
+        .contact-textarea {
+            resize: vertical;
+            height: 80px;
+        }
+        
+        /* Button Styles */
+        .contact-button {
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #ee35e2;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        
+        .contact-button:hover {
+            background-color: #004494;
+        }
+
+    </style>
+</head>
+<body>
+    <h2 id="contact-title">Contact Us</h2>
+    <section class="contact-section">
+    
+    <form class="contact-form" action="/send-message" method="post">
+        <label class="contact-label" for="name">Name:</label>
+        <input class="contact-input" type="text" id="name" name="name" required>
+        
+        <label class="contact-label" for="email">Email:</label>
+        <input class="contact-input" type="email" id="email" name="email" required>
+        
+        <label class="contact-label" for="message">Message:</label>
+        <textarea class="contact-textarea" id="message" name="message" required></textarea>
+        
+        <button class="contact-button" type="submit">Send Message</button>
+    </form>
+</section>
+    </main>
+</body>
+</html>
